@@ -21,7 +21,7 @@
     transform: translateZ(-2px) translateY(-25px);
   }
 }
-body {
+.title {
   background-color: #1a1a1a;
   background: radial-gradient(circle at center, #1a1546, #040411 40%);
   display: flex;
@@ -70,3 +70,54 @@ h3 span {
   -webkit-animation: bounce 3s cubic-bezier(0.37, 0, 0.21, 1.02) infinite, fonts 5s linear infinite;
   animation: bounce 3s cubic-bezier(0.37, 0, 0.21, 1.02) infinite, fonts 5s linear infinite;
 }
+
+
+
+
+/*scroll thingies*/
+
+
+
+
+html, body, section {
+  block-size: 100%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(even) {
+  color: black;
+  background: white;
+}
+
+section:nth-of-type(odd) {
+  color: white;
+  background: black;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 4rem;
+}
+
+
+
+
+/*end*/
+
+
+
+
+
