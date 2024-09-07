@@ -1,3 +1,6 @@
+
+/*bouncy (nein gar nicht von freefrontend geklaut)*/
+
 @import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, to {
@@ -30,6 +33,14 @@
   height: 100vh;
   width: 100%;
   perspective: 1000px;
+
+
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h3 {
@@ -72,6 +83,8 @@ h3 span {
 }
 
 
+/*end (bouncy) */
+
 
 
 /*scroll thingies*/
@@ -97,13 +110,13 @@ section {
 }
 
 section:nth-of-type(even) {
-  color: black;
-  background: white;
+  color: white;
+  background: black;
 }
 
 section:nth-of-type(odd) {
-  color: white;
-  background: black;
+  color: black;
+  background: white;
 }
 
 body {
